@@ -1,0 +1,7 @@
+**/*.mp4
+**/*.h5
+**/*.mp4.crdownload
+**/__pycache__/
+.idea/
+**/*.cprof
+dataset/
