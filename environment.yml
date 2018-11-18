@@ -4,7 +4,7 @@ channels:
 dependencies:
 - python=3.6
 - tensorflow=1.12.0
-- tensorflow-gpu=1.12.0
+# - tensorflow-gpu=1.12.0
 - keras
 - matplotlib
 - numpy

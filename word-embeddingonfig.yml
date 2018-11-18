@@ -1,0 +1,17 @@
+word_embeding:
+    path: word-embedding/glove.6B.300d.txt
+    one_hot_vector_size: 300 # Size of word embeding vectors
+    rows_count: 20000 # how many unique words to use (i.e num rows in embedding vector)
+    max_words_count: 100 # max number of words in a comment to use
+dataset:
+    path:
+        train: dataset/train.csv
+        test: dataset/test.csv
+    feature: comment_text
+    labels:
+        - toxic
+        - severe_toxic
+        - obscene
+        - threat
+        - insult
+        - identity_hate
