@@ -1,15 +1,14 @@
 word_embeding:
     path: word-embedding/glove.6B.50d.txt
-    column_count: 300 # Size of word embeding vectors
-    rows_count: 20000 # how many unique words to use (i.e num rows in embedding vector)
+    columns_count: 50 # Size of word embeding vectors
+    rows_count: 20000 # How many unique words to use (i.e num rows in embedding vector)
 
 dataset:
     path:
         train: dataset/train.csv
         test: dataset/test.csv
-    feature:
-        column: comment_text
-        max_words_count: 100 # max number of words in a comment to use
+    features:
+        - comment_text
     labels:
         - toxic
         - severe_toxic
