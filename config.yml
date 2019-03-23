@@ -1,0 +1,18 @@
+word_embeding:
+    path: word-embedding/glove.6B.50d.txt
+    columns_count: 50 # Size of word embeding vectors
+    rows_count: 20000 # How many unique words to use (i.e num rows in embedding vector)
+
+dataset:
+    path:
+        train: dataset/train.csv
+        test: dataset/test.csv
+    features:
+        - comment_text
+    labels:
+        - toxic
+        - severe_toxic
+        - obscene
+        - threat
+        - insult
+        - identity_hate
